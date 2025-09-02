@@ -1,93 +1,158 @@
 
+/** Main styles for the document **/
 
-<!DOCTYPE html>
-<html lang="en-US">
+html
+{margin: 0;
+border: 0;
+padding: 0;
+overflow-y: scroll; /** Up-down scrollbar is always present. **/}
 
-<!-- This section includes scripts, meta information, the location of CSS style sheets, etc. -->
-<head>
-    <title>Harold Blum</title>
-    <meta name="description" content="Homepage of Harold Blum at Georgia Tech">
-    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-       <link rel="stylesheet" type="text/css" href="style.css" media="all">
+body
+{margin: 0;
+border: 0;
+padding: 0 0 50px;
+width: 100%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;}
+
+header
+{margin: 0;
+border: 0;
+padding: 0;
+position: fixed;            /** Fixed header relative to browser window. **/
+width: 100%;
+z-index: 1000;              /** Header above other elements when scrolling. **/
+background-color: #ffffff;  /** Header gets white background,. **/
+text-align: center;         /** Centers nav bar. **/
+white-space: nowrap;        /** Header element don't wrap. **/}
+
+h5
+{
+margin: 4px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1rem;
+font-weight: normal;
+color: #525252
+}
 
 
+h4
+{margin: 40px 0 0;
+border: 0;
+padding: 0;}
+
+h4:first-of-type
+{margin: 0;}
+
+/** The title of the page. **/
+header h2  /** H2s inside of a header. **/
+{margin: 4px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1.5rem;
+font-family: helvetica;
+font-weight: lighter;}
+
+body h3  /** H#s inside of body. **/
+{margin: 0px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1.1rem;
+font-family: helvetica;
+font-weight: bolder;}
+
+/** The horizontal lines in the header. **/
+header hr  /** Hrs inside of a header. **/
+/            {margin: 2px 0;
+/              border: 0;
+/              padding: 0;
+/              height: 2px;
+/              background: #333333;}
+
+/** The navigation bar. **/
+nav
+{margin: 0;
+border: 0;
+padding: 0;}
+
+/** Anything that is a menu in nav. **/
+nav ul  /** List inside nav bar. **/
+{margin: 0;
+border: 0;
+padding: 0;
+position: relative;     
+list-style: none;       /** Suppresses bullets. **/
+display: inline-table;  /** This isn't supported in IE before version 8. **/
+vertical-align: bottom; /** Forces the main navigation bar to the bottom of the nav. **/}
+
+/** Anything that is an entry in nav. **/
+nav ul li  /** Li's that are in a ul which is inside of a nav. **/
+{float: left;
+margin: 0 25px;
+border: 0;
+padding: 0;}
+
+/** Links in the main navigation bar. **/
+nav > ul a  /** Links that are in a ul which is in a nav. **/
+{margin: 0;
+border: 0;
+border-radius: 5px;
+padding: 2px 5px;
+display: block;
+font-size: 1.2rem;
+font-family: helvetica;
+font-weight: normal;}
+
+/** Actual content **/
+#content
+{margin: 0 auto;
+border: 0;
+padding: 100px 0px 0px;
+width: 70%;
+min-width: 300px;
+max-width: 700px;
+text-align: left;
+position: relative;
+display: block;
+padding-top: 100px; /* ensures content starts below fixed header */
+font-size: 1rem;
+font-family: helvetica;
+font-weight: lighter;}
 
 
+#contactinfo
+{text-align: left;
+width: 355px;
+height: 131px;
+margin: 15px 0;
+font-size: 1rem;
+border-collapse: collapse;}
 
+#contactinfo 
+td{vertical-align: top;}
+.c1{margin: 0;
+border: 0;
+padding: 0;
+width: 65px;}
+.c2{margin: 0;
+border: 0;
+padding: 0;
+width: 290px;}
+.r1{height: 25px;}
+.r2{height: 80px;}
+.r3{height: 25px;}      
 
-<body>
+/** Link styles **/
+/** All links same color. **/
+a:link, a:hover, a:visited, a:visited:hover
+{color: #508F5C;
+text-decoration: none;}
 
-<!-- header on every page -->
-<header>
-        <h2> Harold Blum </h2>
-        
-       
-       <h5>  Georgia Tech
-		-   School of Mathematics</h5>
-		 <p></p>
-        
-        
-<!-- links in header bar -->        
-        <hr>
-			<nav>
-            <ul>
-               		<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-            </ul>
-         	</nav>
-		<hr>
-</header>
+/*Links under hover get background.*/
+a:hover, a:visited:hover
+{background-color: #EAECEE;}
 
-    
-<div id="content" class="mainpage">
-<!-- main page image -->
-		<br><br><img id="arb" src="photo3.jpeg" alt="" height="333" width="250" align="right" style="border: 15px solid #fff" border="2">
-    	
-    	
-		<p>
-  I am an Assistant Professor in the <a href="https://math.gatech.edu/"> School of Mathematics</a> at the  <a href="https://www.gatech.edu/"> Georgia Institute of Technology</a> and  on leave as an Assistant Professor at the <a href="https://www.utah.edu"> University of Utah</a>.
-  
-  <p>
- From  2018 to 2021, I was an NSF postdoc at  Stony Brook University and the University of Utah.
-In 2018, I completed my  Ph.D. at the University of Michigan
- under the supervision of  <a
-      href="http://www-personal.umich.edu/~mmustata/"> Mircea
-      Musta&#355;&#259;</a>.   
-  
-      
-      
-      
-     
-		
-		<p>My research is in algebraic geometry with a focus on birational geometry, singularities, Fano varieties, K-stability, and moduli. 
-
-<p> My work is partially supported by NSF CAREER Grant  DMS-2441378 and NSF Grant DMS-2200690.	
-		
-	
-		
-		<h3 style="font-weight:bolder;">Contact Information</h3>
-		<table id="contactinfo">
-            <tr>
-            <td class="c1 r1"> Email: </td>
-            <td class="c2 r1"> haroldblum [at] gatech [dot] edu </td>
-            </tr>
-            
-            <tr>
-            <td class="c1 r3">Office:</td>
-            <td class="c2 r3">Skiles 227</td>	
-            </tr>
-
-            <tr>
-            <td class="c1 r2"> Mail: </td>
-            <td class="c2 r2">
- School of Mathematics <br>
-Georgia Institute of Technology <br>
-686 Cherry Street <br>
-Atlanta, GA 30332 USA </td>            </tr>
-		</table>
-</div>
-	
-    
-</body>
-</html>
+/*No border on images.*/
+a img
+{border: none;}
