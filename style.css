@@ -124,6 +124,7 @@ nav > ul a  /** Links that are in a ul which is in a nav. **/
         width: 355px;
         height: 131px;
         margin: 15px 0;
+	    font-size: 1rem;
         border-collapse: collapse;}
 
 #contactinfo 
