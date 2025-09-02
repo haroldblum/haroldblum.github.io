@@ -2,65 +2,65 @@
 /** Main styles for the document **/
 
 html
-    {margin: 0;
-      border: 0;
-      padding: 0;
-      overflow-y: scroll; /** Up-down scrollbar is always present. **/}
+{margin: 0;
+border: 0;
+padding: 0;
+overflow-y: scroll; /** Up-down scrollbar is always present. **/}
 
 body
-    {margin: 0;
-      border: 0;
-      padding: 0 0 50px;
-      width: 100%;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem;}
+{margin: 0;
+border: 0;
+padding: 0 0 50px;
+width: 100%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;}
 
- header
-    {margin: 0;
-      border: 0;
-      padding: 0;
-      position: fixed;            /** Fixed header relative to browser window. **/
-      width: 100%;
-      z-index: 1000;              /** Header above other elements when scrolling. **/
-      background-color: #ffffff;  /** Header gets white background,. **/
-      text-align: center;         /** Centers nav bar. **/
-      white-space: nowrap;        /** Header element don't wrap. **/}
+header
+{margin: 0;
+border: 0;
+padding: 0;
+position: fixed;            /** Fixed header relative to browser window. **/
+width: 100%;
+z-index: 1000;              /** Header above other elements when scrolling. **/
+background-color: #ffffff;  /** Header gets white background,. **/
+text-align: center;         /** Centers nav bar. **/
+white-space: nowrap;        /** Header element don't wrap. **/}
 
 h5
 {
-  margin: 4px;
-  border: 0;
-  padding: 4px 0 0;
-  font-size: 1rem;
-  font-weight: normal;
-  color: #525252
+margin: 4px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1rem;
+font-weight: normal;
+color: #525252
 }
 
 
 h4
-    {margin: 40px 0 0;
-      border: 0;
-      padding: 0;}
+{margin: 40px 0 0;
+border: 0;
+padding: 0;}
 
 h4:first-of-type
-    {margin: 0;}
+{margin: 0;}
 
 /** The title of the page. **/
 header h2  /** H2s inside of a header. **/
-            {margin: 4px;
-              border: 0;
-              padding: 4px 0 0;
-              font-size: 1.5rem;
-              font-family: helvetica;
-              font-weight: lighter;}
-              
+{margin: 4px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1.5rem;
+font-family: helvetica;
+font-weight: lighter;}
+
 body h3  /** H#s inside of body. **/
-            {margin: 0px;
-              border: 0;
-              padding: 4px 0 0;
-              font-size: 1.2rem;
-              font-family: helvetica;
-              font-weight: bolder;}
+{margin: 0px;
+border: 0;
+padding: 4px 0 0;
+font-size: 1.1rem;
+font-family: helvetica;
+font-weight: bolder;}
 
 /** The horizontal lines in the header. **/
 header hr  /** Hrs inside of a header. **/
@@ -72,88 +72,87 @@ header hr  /** Hrs inside of a header. **/
 
 /** The navigation bar. **/
 nav
-            {margin: 0;
-              border: 0;
-              padding: 0;}
+{margin: 0;
+border: 0;
+padding: 0;}
 
 /** Anything that is a menu in nav. **/
 nav ul  /** List inside nav bar. **/
-            {margin: 0;
-              border: 0;
-              padding: 0;
-              position: relative;     
-              list-style: none;       /** Suppresses bullets. **/
-              display: inline-table;  /** This isn't supported in IE before version 8. **/
-              vertical-align: bottom; /** Forces the main navigation bar to the bottom of the nav. **/}
+{margin: 0;
+border: 0;
+padding: 0;
+position: relative;     
+list-style: none;       /** Suppresses bullets. **/
+display: inline-table;  /** This isn't supported in IE before version 8. **/
+vertical-align: bottom; /** Forces the main navigation bar to the bottom of the nav. **/}
 
 /** Anything that is an entry in nav. **/
 nav ul li  /** Li's that are in a ul which is inside of a nav. **/
-            {float: left;
-              margin: 0 25px;
-              border: 0;
-              padding: 0;}
+{float: left;
+margin: 0 25px;
+border: 0;
+padding: 0;}
 
 /** Links in the main navigation bar. **/
 nav > ul a  /** Links that are in a ul which is in a nav. **/
-            {margin: 0;
-               border: 0;
-               border-radius: 5px;
-               padding: 2px 5px;
-               display: block;
-               font-size: 1.2rem;
-               font-family: helvetica;
-               font-weight: normal;}
+{margin: 0;
+border: 0;
+border-radius: 5px;
+padding: 2px 5px;
+display: block;
+font-size: 1.2rem;
+font-family: helvetica;
+font-weight: normal;}
 
 /** Actual content **/
 #content
-    {margin: 0 auto;
-      border: 0;
-      padding: 100px 0px 0px;
-      width: 70%;
-      min-width: 300px;
-      max-width: 700px;
-      text-align: left;
-      position: relative;
-      display: block;
-	  padding-top: 100px; /* ensures content starts below fixed header */
-      font-size: 1rem;
-      font-family: helvetica;
-      font-weight: lighter;}
+{margin: 0 auto;
+border: 0;
+padding: 100px 0px 0px;
+width: 70%;
+min-width: 300px;
+max-width: 700px;
+text-align: left;
+position: relative;
+display: block;
+padding-top: 100px; /* ensures content starts below fixed header */
+font-size: 1rem;
+font-family: helvetica;
+font-weight: lighter;}
 
-      
+
 #contactinfo
-      {text-align: left;
-        width: 355px;
-        height: 131px;
-        margin: 15px 0;
-	    font-size: 1rem;
-        border-collapse: collapse;}
+{text-align: left;
+width: 355px;
+height: 131px;
+margin: 15px 0;
+font-size: 1rem;
+border-collapse: collapse;}
 
 #contactinfo 
-	td{vertical-align: top;}
-	.c1{margin: 0;
-        border: 0;
-        padding: 0;
-        width: 65px;}
-	 .c2{margin: 0;
-        border: 0;
-        padding: 0;
-        width: 290px;}
-	.r1{height: 25px;}
-	.r2{height: 80px;}
-	.r3{height: 25px;}      
+td{vertical-align: top;}
+.c1{margin: 0;
+border: 0;
+padding: 0;
+width: 65px;}
+.c2{margin: 0;
+border: 0;
+padding: 0;
+width: 290px;}
+.r1{height: 25px;}
+.r2{height: 80px;}
+.r3{height: 25px;}      
 
 /** Link styles **/
 /** All links same color. **/
 a:link, a:hover, a:visited, a:visited:hover
-      {color: #508F5C;
-        text-decoration: none;}
+{color: #508F5C;
+text-decoration: none;}
 
 /*Links under hover get background.*/
 a:hover, a:visited:hover
-      {background-color: #EAECEE;}
+{background-color: #EAECEE;}
 
 /*No border on images.*/
 a img
-      {border: none;}
-
+{border: none;}
