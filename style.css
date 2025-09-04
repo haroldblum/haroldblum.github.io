@@ -63,12 +63,12 @@ font-family: helvetica;
 font-weight: bolder;}
 
 /** The horizontal lines in the header. **/
-header hr  /** Hrs inside of a header. **/
-/            {margin: 2px 0;
-/              border: 0;
-/              padding: 0;
-/              height: 2px;
-/              background: #333333;}
+header hr {
+  margin: 6px 0;              /* adjust spacing as needed */
+  border: none;
+  height: 1px;                 /* thin line */
+  background-color: #d0d0d0;   /* light grey */
+}
 
 /** The navigation bar. **/
 nav
