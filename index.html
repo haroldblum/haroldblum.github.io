@@ -71,7 +71,7 @@
 																<table id="contactinfo">
 																	<tr>
 																		<td class="c1 r1"> Email: </td>
-																		<td class="c2 r1"> haroldblum [at] gatech [dot] edu </td>
+																		<td class="c2 r1"> <span id="email-contact">Contact me</span> </td>
 																	</tr>
 																	
 																	<tr>
@@ -94,7 +94,7 @@ https://haroldblum.github.io/index.html -->
 var sc_project=13225326; 
 var sc_invisible=1; 
 var sc_security="f8086857"; 
-</script>
+</script>						
 <script type="text/javascript"
 src="https://www.statcounter.com/counter/counter.js" async></script>
 <noscript><div class="statcounter"><a title="Web Analytics"
@@ -102,6 +102,21 @@ href="https://statcounter.com/" target="_blank"><img class="statcounter"
 src="https://c.statcounter.com/13225326/0/f8086857/1/" alt="Web Analytics"
 referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->																		
-																		
+
+<script>
+  (function() {
+    // Split your email into two parts
+    var user = "haroldblum";
+    var domain = "gatech.edu";
+    
+    // Find the placeholder
+    var element = document.getElementById("email-contact");
+    
+    // Create the full address and link
+    var email = user + "@" + domain;
+    element.innerHTML = '<a href="mailto:' + email + '">' + email + '</a>';
+  })();
+</script>
+						
 																	</body>
 																</html>
