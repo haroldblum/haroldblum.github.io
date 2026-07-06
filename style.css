@@ -243,12 +243,13 @@ a img {
   }
 
   #arb {
-    float: none;
+    float: right;
     display: block;
-    width: min(250px, 85%);
+    width: 115px;
+    max-width: 38vw;
     height: auto;
-    margin: 0 auto 18px;
-    border: 10px solid #fff;
+    margin: 0 0 12px 16px;
+    border: 6px solid #fff;
   }
 
   #contactinfo {
