@@ -1,160 +1,266 @@
-
 /** Main styles for the document **/
 
-html
-{margin: 0;
-border: 0;
-padding: 0;
-overflow-y: scroll; /** Up-down scrollbar is always present. **/}
-
-body
-{margin: 0;
-border: 0;
-padding: 0 0 50px;
-width: 100%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 11pt;}
-
-header
-{margin: 0;
-border: 0;
-padding: 0;
-position: fixed;            /** Fixed header relative to browser window. **/
-width: 100%;
-z-index: 1000;              /** Header above other elements when scrolling. **/
-background-color: #ffffff;  /** Header gets white background,. **/
-text-align: center;         /** Centers nav bar. **/
-white-space: nowrap;        /** Header element don't wrap. **/}
-
-h5
-{
-margin: 4px;
-border: 0;
-padding: 4px 0 0;
-font-size: 11pt;
-font-weight: normal;
-color: #525252
+* {
+  box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
 
-h4
-{margin: 40px 0 0;
-border: 0;
-padding: 0;}
+body {
+  margin: 0;
+  border: 0;
+  padding: 0 0 50px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  -webkit-text-size-adjust: 100%;
+}
 
-h4:first-of-type
-{margin: 0;}
+header {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+}
 
-/** The title of the page. **/
-header h2  /** H2s inside of a header. **/
-{margin: 4px;
-border: 0;
-padding: 4px 0 0;
-font-size: 16pt;
-font-family: helvetica;
-font-weight: lighter;}
+header h2 {
+  margin: 4px;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 16pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
 
-body h3  /** H#s inside of body. **/
-{margin: 0px;
-border: 0;
-padding: 4px 0 0;
-font-size: 11pt;
-font-family: helvetica;
-font-weight: bolder;}
+h5 {
+  margin: 4px;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 11pt;
+  font-weight: normal;
+  color: #525252;
+}
 
-/** The horizontal lines in the header. **/
+h4 {
+  margin: 40px 0 0;
+  border: 0;
+  padding: 0;
+}
+
+h4:first-of-type {
+  margin: 0;
+}
+
+body h3 {
+  margin: 0;
+  border: 0;
+  padding: 4px 0 0;
+  font-size: 11pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}
+
 header hr {
-  margin: 6px 0;              /* adjust spacing as needed */
+  margin: 6px 0;
   border: none;
-  height: 1px;                 /* thin line */
-  background-color: #d0d0d0;   /* light grey */
+  height: 1px;
+  background-color: #d0d0d0;
 }
 
-/** The navigation bar. **/
-nav
-{margin: 0;
-border: 0;
-padding: 0;}
-
-/** Anything that is a menu in nav. **/
-nav ul  /** List inside nav bar. **/
-{margin: 0;
-border: 0;
-padding: 0;
-position: relative;     
-list-style: none;       /** Suppresses bullets. **/
-display: inline-table;  /** This isn't supported in IE before version 8. **/
-vertical-align: bottom; /** Forces the main navigation bar to the bottom of the nav. **/}
-
-/** Anything that is an entry in nav. **/
-nav ul li  /** Li's that are in a ul which is inside of a nav. **/
-{float: left;
-margin: 0 25px;
-border: 0;
-padding: 0;}
-
-/** Links in the main navigation bar. **/
-nav > ul a  /** Links that are in a ul which is in a nav. **/
-{margin: 0;
-border: 0;
-border-radius: 5px;
-padding: 2px 5px;
-display: block;
-font-size: 12pt;
-font-family: helvetica;
-font-weight: normal;}
-
-/** Actual content **/
-#content
-{margin: 0 auto;
-border: 0;
-padding: 100px 0px 0px;
-width: 70%;
-min-width: 300px;
-max-width: 700px;
-text-align: left;
-position: relative;
-display: block;
-font-size: 11pt;
-font-family: helvetica;
-font-weight: lighter;}
-
-#contactinfo
-{text-align: left;
-width: 355px;
-height: 131px;
-margin: 15px 0;
-border-collapse: collapse;
-display: block;
-font-size: 11pt;
-font-family: helvetica;
-font-weight: lighter;
+nav {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 
-#contactinfo 
-td{vertical-align: top;}
-.c1{margin: 0;
-border: 0;
-padding: 0;
-width: 65px;}
-.c2{margin: 0;
-border: 0;
-padding: 0;
-width: 290px;}
-.r1{height: 25px;}
-.r2{height: 80px;}
-.r3{height: 25px;}      
+nav ul {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  display: inline-table;
+  vertical-align: bottom;
+}
 
-/** Link styles **/
-/** All links same color. **/
-a:link, a:hover, a:visited, a:visited:hover
-{color: #508F5C;
-text-decoration: none;}
+nav ul li {
+  float: left;
+  margin: 0 25px;
+  border: 0;
+  padding: 0;
+}
 
-/*Links under hover get background.*/
-a:hover, a:visited:hover
-{background-color: #EAECEE;}
+nav > ul a {
+  margin: 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 2px 5px;
+  display: block;
+  font-size: 12pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
 
-/*No border on images.*/
-a img
-{border: none;}
+#content {
+  margin: 0 auto;
+  border: 0;
+  padding: 100px 0 0;
+  width: 70%;
+  min-width: 300px;
+  max-width: 700px;
+  text-align: left;
+  position: relative;
+  display: block;
+  font-size: 11pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 1.35;
+}
+
+#arb {
+  float: right;
+  width: 250px;
+  height: auto;
+  margin: 30px 0 15px 25px;
+  border: 15px solid #fff;
+}
+
+#contactinfo {
+  text-align: left;
+  width: 355px;
+  height: auto;
+  margin: 15px 0;
+  border-collapse: collapse;
+  font-size: 11pt;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+#contactinfo td {
+  vertical-align: top;
+}
+
+.c1 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 65px;
+}
+
+.c2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 290px;
+}
+
+.r1 {
+  height: 25px;
+}
+
+.r2 {
+  height: 80px;
+}
+
+.r3 {
+  height: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:visited:hover {
+  color: #508F5C;
+  text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+  background-color: #EAECEE;
+}
+
+a img {
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+
+  header {
+    position: static;
+    white-space: normal;
+  }
+
+  header h2 {
+    font-size: 18pt;
+  }
+
+  h5 {
+    font-size: 11pt;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    float: none;
+    margin: 0;
+  }
+
+  nav > ul a {
+    font-size: 12pt;
+  }
+
+  #content {
+    width: 100%;
+    min-width: 0;
+    max-width: 700px;
+    padding: 20px 18px 0;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  #arb {
+    float: none;
+    display: block;
+    width: min(250px, 85%);
+    height: auto;
+    margin: 0 auto 18px;
+    border: 10px solid #fff;
+  }
+
+  #contactinfo {
+    width: 100%;
+    max-width: 355px;
+  }
+
+  .c1 {
+    width: 65px;
+  }
+
+  .c2 {
+    width: auto;
+  }
+}
